@@ -1,0 +1,29 @@
+{
+  "name": "flashcards.github.io",
+  "version": "0.0.1",
+  "description": "Flashcards for Developers | flashcards.github.io",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "rxjs": "^5.0.0-beta.2"
+  },
+  "scripts": {
+    "build": "gitbook build",
+    "s": "gitbook serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flashcards/flashcards.github.io.git"
+  },
+  "keywords": [
+    "flashcards"
+  ],
+  "author": "Zachary Lawson <hello@zacharylawson.com>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flashcards/flashcards.github.io/issues"
+  },
+  "homepage": "https://github.com/flashcards/flashcards.github.io#readme"
+}
