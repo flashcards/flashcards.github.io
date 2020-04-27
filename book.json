@@ -1,0 +1,44 @@
+{
+  "gitbook": "3.1.1",
+  "title": "Flashcards for Developers | flashcards.github.io",
+  "plugins": [
+    "include-codeblock",
+    "advanced-emoji",
+    "prism",
+    "highlight",
+    "copy-code-button",
+    "edit-link",
+    "github",
+    "github-buttons",
+    "ga",
+    "fontsettings"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/flashcards/flashcards.github.io/edit/master",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/flashcards/flashcards.github.io/"
+    },
+    "ga": {
+      "token": "UA-129080735-2"
+    },
+    "github-buttons": {
+      "buttons": [
+        {
+          "user": "flashcards",
+          "repo": "flashcards.github.io",
+          "type": "star",
+          "size": "small",
+          "count": true
+        },{
+          "user": "flashcards",
+          "repo": "flashcards.github.io",
+          "type": "watch",
+          "size": "small"
+        }
+      ]
+    }
+  }
+}
