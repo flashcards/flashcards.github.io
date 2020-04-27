@@ -1,6 +1,6 @@
 # Introduction | Command Line Flashcards
 
-<iframe class="FlashcardsIO" src="https://embed.flashcards.io/?url=https://flashcards.github.io/command_line/introduction.html" frameborder="0"></iframe>
+`<iframe src="https://embed.flashcards.io/?url=https://flashcards.github.io/command_line/introduction.html"></iframe>`
 
 ### command line
 
