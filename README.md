@@ -14,3 +14,4 @@
 - Ruby _(coming soon)_
 - [SQL](/sql/README.md)
 - Typescript _(coming soon)_
+- [HTML](/HTML/README.md)
