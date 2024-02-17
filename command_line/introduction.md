@@ -1,6 +1,6 @@
 # Introduction | Command Line Flashcards
 
-<iframe src="https://embed.flashcards.io/?url=https://flashcards.github.io/command_line/introduction.html"></iframe>
+<iframe class="FlashcardsIO" src="https://embed.flashcards.io/?url=https://flashcards.github.io/command_line/introduction.html"></iframe>
 
 ### command line
 
@@ -78,7 +78,7 @@ cat command allows us to create single or multiple files, view contain of file, 
 
 `|` is a “pipe”. The | takes the standard output of the command on the left, and pipes it as standard input to the command on the right. You can think of this as “command to command” redirection. Example: `cat volcanoes.txt | wc`
 
-
 ## References:
+
 - http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
 - https://www.codecademy.com/articles/command-line-commands
