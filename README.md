@@ -139,3 +139,7 @@ If you've noticed a mistake or have a new deck, [open a pull request](https://gi
 5. Run `cp -R _book/* .` via the command line.
 6. Run `git clean -fx _book` via the command line.
 7. Commit your changes and [open a PR](https://github.com/flashcards/flashcards.github.io/issues/new).
+
+---
+
+Created by [Zachary Lawson](https://zacharylawson.com/)
