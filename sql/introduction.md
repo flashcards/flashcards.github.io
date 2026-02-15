@@ -20,6 +20,9 @@ A database column is a set of data values of a particular simple type, one value
 ### PRIMARY KEY
 A primary key, sometimes labeled as the unique identifier, is a specific choice of a set of columns that uniquely identify a row in a relational table. Simply put, a primary key is the attributes which identify a record.
 
+### FOREIGN KEY
+A FOREIGN KEY is a column (or set of columns) in one table that refers to the PRIMARY KEY in another table. It establishes a relationship between two tables and enforces referential integrity, meaning the value in the foreign key column must match an existing primary key value in the referenced table (or be NULL, if allowed).
+
 ### INSERT
 `INSERT` statements are used to add a new row to a table.
 
