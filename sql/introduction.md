@@ -35,6 +35,9 @@ An INNER JOIN will combine rows from different tables if the *join condition* is
 ### OUTER JOIN
 An outer join will combine rows from different tables even if the join condition is not met. Every row in the *left* table is returned in the result set, and if the join condition is not met, then `NULL` values are used to fill in the columns from the *right* table.
 
+### UNION / UNION ALL
+The `UNION` operator is used to combine the result-set of two or more `SELECT` statements. `UNION` removes duplicate rows between the various `SELECT` statements, while `UNION ALL` includes all rows, including duplicates. Each `SELECT` statement within `UNION` must have the same number of columns with similar data types and in the same order.
+
 ### UPDATE
 `UPDATE` statements allow you to edit rows in a table.
 
