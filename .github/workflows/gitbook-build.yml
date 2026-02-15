@@ -1,0 +1,57 @@
+name: Build GitBook
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '**/*.md'
+      - 'book.json'
+      - 'SUMMARY.md'
+      - 'package.json'
+      - 'package-lock.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-commit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+
+      - name: Install dependencies and GitBook plugins
+        run: |
+          npm install
+          npm install -g gitbook-cli
+          gitbook install
+
+      - name: Build GitBook
+        run: |
+          gitbook build
+          cp -R _book/* .
+          git clean -fx _book
+
+      - name: Commit generated site files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore: regenerate GitBook output"
+            git push
+          else
+            echo "No generated changes to commit"
+          fi
